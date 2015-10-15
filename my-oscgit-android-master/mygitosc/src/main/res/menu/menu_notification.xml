@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bill.mygitosc.ui.NotificationActivity">
+    <item
+        android:id="@+id/action_refreshNoti"
+        android:icon="@mipmap/action_refresh"
+        android:title="刷新"
+        app:showAsAction="always" />
+</menu>

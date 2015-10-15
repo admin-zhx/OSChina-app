@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sem_watch">\uf06e</string>
+    <string name="sem_empty_watch">\uf070</string>
+    <string name="sem_star">\uf005</string>
+    <string name="sem_empty_star">\uf006</string>
+    <string name="sem_fork">\uf126</string>
+    <string name="sem_tag">\uf02b</string>
+    <string name="sem_lock">\uf023</string>
+    <string name="sem_user">\uf007</string>
+
+    <string name="fa_clock_o">\uf017</string>
+</resources>

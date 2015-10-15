@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bill.mygitosc.ui.SearchActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/searchview_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:background="@color/light_gray"
+        android:padding="10dp">
+
+        <com.bill.mygitosc.widget.ClearEditText
+            android:id="@+id/custom_searchview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_view_backgound"
+            android:drawableLeft="@drawable/ic_search_api_holo_light"
+            android:hint="@string/search_project_hint"
+            android:imeOptions="actionSearch"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:visibility="gone"
+        app:queryHint="@string/search_project_hint" />
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchview_linearlayout" />
+
+</RelativeLayout>

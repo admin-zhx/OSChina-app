@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_item_explore"
+            android:checked="true"
+            android:icon="@drawable/menu_icon_explore"
+            android:title="@string/menu_item_explore" />
+        <item
+            android:id="@+id/menu_item_myself"
+            android:icon="@drawable/menu_icon_my"
+            android:title="@string/menu_item_myself" />
+        <item
+            android:id="@+id/menu_item_language"
+            android:icon="@drawable/menu_icon_language"
+            android:title="@string/menu_item_language" />
+        <item
+            android:id="@+id/menu_item_shake"
+            android:icon="@drawable/menu_icon_shark"
+            android:title="@string/menu_item_shake" />
+    </group>
+
+    <item android:title="@string/menu_drawer_subItem">
+        <menu>
+            <item
+                android:id="@+id/menu_item_changeTheme"
+                android:title="@string/menu_item_changeTheme" />
+            <item
+                android:id="@+id/menu_item_settings"
+                android:title="@string/menu_item_settings" />
+        </menu>
+    </item>
+
+</menu>
