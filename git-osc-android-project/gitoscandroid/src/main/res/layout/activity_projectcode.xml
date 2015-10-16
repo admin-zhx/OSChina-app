@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <net.oschina.gitapp.widget.TipInfoLayout
+        android:id="@+id/tip_info"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/rl_branch"
+        android:visibility="gone"
+        layout="@layout/activity_projectcode_footer" />
+
+
+    <TextView
+        android:id="@+id/tv_paths"
+        android:layout_alignParentTop="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_paths"
+        android:layout_above="@id/rl_branch"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_wifi">\uf1eb</string>
+    <string name="fa_refresh">\uf021</string>
+    <string name="fa_clock_o">\uf017</string>
+</resources>

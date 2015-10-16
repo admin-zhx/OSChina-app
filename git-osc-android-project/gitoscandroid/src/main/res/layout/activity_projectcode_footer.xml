@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:padding="10dp"
+    android:background="@drawable/actionbar_background"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tv_branch_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dip"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:text="@string/oct_fork" />
+
+    <TextView
+        android:id="@+id/tv_branch_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:text="master"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="17sp" />
+
+</LinearLayout>

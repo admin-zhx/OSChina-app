@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <!-- 项目作者头像 -->
+
+    <net.oschina.gitapp.widget.CircleImageView
+        android:id="@+id/iv_portrait"
+        style="@style/UserFaceImageStyle" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/project_list_title"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:layout_weight="1" />
+
+            <!-- flag -->
+            <TextView
+                android:id="@+id/tv_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dip"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <!-- project description -->
+
+        <TextView
+            android:id="@+id/tv_description"
+            style="@style/project_list_description" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_date"
+                style="@style/project_list_someinfo" />
+
+            <!-- language type -->
+
+            <TextView
+                android:id="@+id/tv_watch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/project_list_someinfo"
+                android:text="@string/sem_watch" />
+
+            <TextView
+                android:id="@+id/tv_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/project_list_someinfo"
+                android:text="@string/sem_star" />
+
+            <TextView
+                android:id="@+id/tv_fork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/project_list_someinfo"
+                android:text="@string/sem_fork" />
+
+            <TextView
+                android:id="@+id/tv_lanuage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/project_list_someinfo"
+                android:text="@string/sem_tag" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    tools:context=".ui.fragments.ExploreLatestListProjectFragment" >
+
+    <net.oschina.gitapp.widget.CircleImageView
+        android:id="@+id/iv_portrait"
+        style="@style/UserFaceImageStyle"
+        android:layout_marginTop="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#999999"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:orientation="horizontal"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_watch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/project_list_someinfo"
+                android:text="@string/sem_watch"/>
+
+            <TextView
+                android:id="@+id/tv_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/project_list_someinfo"
+                android:text="@string/sem_star" />
+
+            <TextView
+                android:id="@+id/tv_fork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/project_list_someinfo"
+                android:text="@string/sem_fork" />
+
+            <TextView
+                android:id="@+id/tv_lanuage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/project_list_someinfo"
+                android:text="@string/sem_tag" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

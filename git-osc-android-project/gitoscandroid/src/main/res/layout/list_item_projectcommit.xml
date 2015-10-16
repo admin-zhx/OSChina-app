@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <!-- 项目作者头像 -->
+    <net.oschina.gitapp.widget.CircleImageView
+        android:id="@+id/iv_portrait"
+        style="@style/UserFaceImageStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:orientation="vertical" >
+
+        <!-- 用户昵称 -->
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/listitem_blue"
+            tools:text="火蚁"
+            android:textSize="@dimen/text_size_14" />
+
+        <!-- commit内容-->
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:textColor="@color/listitem_black"
+            android:textColorLink="@color/listitem_blue"
+            tools:text="2014-05-23工作提交报告：个人动态列表内容显示"
+            android:textSize="@dimen/text_size_14" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:orientation="horizontal" >
+            
+            <!-- 时间 -->			
+            <TextView
+                android:id="@+id/tv_date"
+                style="@style/list_tip_info" />
+				
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

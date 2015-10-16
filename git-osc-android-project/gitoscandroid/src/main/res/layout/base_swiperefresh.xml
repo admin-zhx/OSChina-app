@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <net.oschina.gitapp.widget.CBSwipeRefreshLayout
+        android:id="@+id/swiperefreshlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/gray"
+            android:dividerHeight="0.1dp"
+            android:scrollingCache="true" />
+    </net.oschina.gitapp.widget.CBSwipeRefreshLayout>
+
+    <net.oschina.gitapp.widget.TipInfoLayout
+        android:id="@+id/tip_info"
+        android:layout="@layout/tip_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</FrameLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 界面内容 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <net.oschina.gitapp.widget.TipInfoLayout
+        android:id="@+id/tip_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ScrollView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="15dip" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/project_detail_projectname"
+                        android:textSize="17sp"
+                        android:text="火蚁" />
+
+                    <TextView
+                        android:id="@+id/tv_update"
+                        style="@style/project_detail_updatetime"
+                        android:layout_marginTop="8dp"
+                        android:text="4天前" />
+                </LinearLayout>
+                
+                <TextView
+                    android:id="@+id/project_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="@string/oct_repo"/>
+                
+            </LinearLayout>
+            
+            <View style="@style/h_line" />
+            
+            <include layout="@layout/activity_project_mid"/>
+
+            <View style="@style/project_detail_line_withtop" />
+
+            <include layout="@layout/activity_project_footer"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/ll_user_portrait"
+            style="@style/myinfo_item">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="头像" />
+
+            <net.oschina.gitapp.widget.CircleImageView
+                android:id="@+id/iv_portrait"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/mini_avatar" />
+        </LinearLayout>
+
+        <View
+            style="@style/h_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_nickname"
+            style="@style/myinfo_item">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="昵称" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="火蚁" />
+        </LinearLayout>
+
+        <View
+            style="@style/h_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_jointime"
+            style="@style/myinfo_item">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="加入时间" />
+
+            <TextView
+                android:id="@+id/tv_jointime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                tools:text="两年前" />
+        </LinearLayout>
+
+        <View
+            style="@style/h_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_description"
+            style="@style/myinfo_item">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="个人介绍" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="时间是人生经历的挚友" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_followers"
+            android:layout_marginTop="20dp"
+            style="@style/myinfo_item">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Followers" />
+
+            <TextView
+                android:id="@+id/tv_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="10" />
+        </LinearLayout>
+
+        <View
+            style="@style/h_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_stared"
+            style="@style/myinfo_item">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stared" />
+
+            <TextView
+                android:id="@+id/tv_stared"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="两年前" />
+        </LinearLayout>
+
+        <View
+            style="@style/h_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_following"
+            style="@style/myinfo_item">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Following" />
+
+            <TextView
+                android:id="@+id/tv_following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="两年前" />
+        </LinearLayout>
+
+        <View
+            style="@style/h_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_watched"
+            style="@style/myinfo_item">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Watched" />
+
+            <TextView
+                android:id="@+id/tv_watched"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="两年前" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="20dip"
+            android:background="@drawable/btn_style_red"
+            android:text="@string/main_menu_logout"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_15" />
+
+    </LinearLayout>
+</ScrollView>

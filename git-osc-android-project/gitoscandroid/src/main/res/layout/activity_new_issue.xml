@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_tile"
+        android:layout_width="match_parent"
+        android:hint="Issue标题"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_desc"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:hint="描述"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_touser"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/list_item_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_touser_icon"
+            android:text="@string/sem_user"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="指派给"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_touser"
+            android:textColor="@color/gray"
+            android:layout_gravity="right"
+            android:text="未指派"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_milestone"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="@drawable/list_item_background"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_milestone_icon"
+            android:text="@string/oct_milestone"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="里程碑"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_milestone"
+            android:textColor="@color/gray"
+            android:layout_gravity="right"
+            android:text="未选择"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/project_grid"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="15dp"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:id="@+id/ll_readme"
+        style="@style/project_detail_layout_style" >
+
+        <TextView
+            android:id="@+id/fi_readme"
+            style="@style/project_detail_mid_grid_item_img"
+            android:layout_marginTop="2dp"
+            android:text="@string/oct_book" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Readme" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/h_line" />
+    
+    <LinearLayout 
+        android:id="@+id/ll_code"
+        style="@style/project_detail_layout_style" >
+
+        <TextView
+            android:id="@+id/fi_code"
+            android:layout_marginTop="2dp"
+            style="@style/project_detail_mid_grid_item_img"
+            android:text="@string/oct_gist" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="代码" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/h_line" />
+
+    <LinearLayout 
+        android:id="@+id/ll_commits"
+        style="@style/project_detail_layout_style"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/fi_commit"
+            android:layout_marginTop="1dp"
+            style="@style/project_detail_mid_grid_item_img"
+            android:text="@string/oct_commit" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="提交" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/h_line"
+        android:visibility="visible" />
+
+    <LinearLayout 
+        android:id="@+id/ll_issues"
+        style="@style/project_detail_layout_style" >
+
+        <TextView
+            android:id="@+id/fi_issue"
+            android:layout_marginTop="2dp"
+            style="@style/project_detail_mid_grid_item_img"
+            android:text="@string/oct_issues" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="问题" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/h_line" />
+
+</LinearLayout>

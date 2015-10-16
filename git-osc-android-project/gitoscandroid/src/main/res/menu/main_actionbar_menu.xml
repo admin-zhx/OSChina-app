@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    
+    <item 
+        android:id="@+id/main_actionbar_menu_search"
+        android:orderInCategory="100"
+        android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
+        android:title="搜索"
+        app:showAsAction="always" />
+    
+    <item
+        android:id="@+id/main_actionbar_menu_notification"
+       	android:orderInCategory="100"
+       	android:icon="@drawable/menu_icon_notice"
+       	android:title="通知"
+       	app:showAsAction="always"/>
+
+</menu>

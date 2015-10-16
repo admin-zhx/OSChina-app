@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sem_watch">\uf06e</string>
+    <string name="sem_empty_watch">\uf070</string>
+    <string name="sem_star">\uf005</string>
+    <string name="sem_empty_star">\uf006</string>
+    <string name="sem_fork">\uf126</string>
+    <string name="sem_tag">\uf02b</string>
+    <string name="sem_lock">\uf023</string>
+    <string name="sem_user">\uf007</string>
+    <string name="sem_wait">\uf017</string>
+    <string name="sem_loading">\uf110</string>
+    <string name="sem_folder">\uf07b</string>
+    <string name="sem_file_text">\uf0f6</string>
+    <string name="sem_download_disk">\uf019</string>
+</resources>

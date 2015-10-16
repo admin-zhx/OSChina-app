@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2012 GitHub Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+
+    <string name="oct_pull_request">\uf20E</string>
+    <string name="oct_comment">\uf04f</string>
+    <string name="oct_file">\uf011</string>
+    <string name="oct_tag">\uf215</string>
+    <string name="oct_folder">\uf216</string>
+    <string name="oct_folders">\uf217</string>
+    <string name="oct_star">\uf02a</string>
+    <string name="oct_fork">\uf020</string>
+    <string name="oct_book">\uf007</string>
+    <string name="oct_gist">\uf00e</string>
+    <string name="oct_issues">\uf026</string>
+    <string name="oct_issues_closed">\uf028</string>
+    <string name="oct_commit">\uf01f</string>
+    <string name="oct_repo">\uf001</string>
+    <string name="oct_lock">\uf06a</string>
+    <string name="oct_milestone">\uf075</string>
+
+</resources>

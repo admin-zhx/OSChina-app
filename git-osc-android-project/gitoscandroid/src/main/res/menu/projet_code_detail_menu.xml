@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    
+    <item 
+        android:id="@+id/refresh"
+        android:orderInCategory="100"
+        android:menuCategory="container"
+        android:icon="@drawable/action_refresh"
+        android:title="刷新"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/copy"
+        android:orderInCategory="1"
+        android:icon="@drawable/more_menu_icon_copy"
+        app:showAsAction="never"
+        android:title="复制链接"/>
+
+    <item
+        android:id="@+id/open_browser"
+        android:orderInCategory="1"
+        android:icon="@drawable/more_menu_icon_browser"
+        app:showAsAction="never"
+        android:title="在浏览器中打开"/>
+
+    <item
+        android:id="@+id/download"
+        android:orderInCategory="1"
+        android:icon="@drawable/more_menu_icon_download"
+        app:showAsAction="never"
+        android:title="下载该文件"/>
+
+</menu>
